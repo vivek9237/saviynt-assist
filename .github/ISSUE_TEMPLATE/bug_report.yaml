@@ -1,0 +1,70 @@
+name: Bug Report / Enhancement Request
+description: Report a bug or request an enhancement for the Chrome Extension.
+title: '[Bug/Enhancement] <short description>'
+labels:
+  - triage
+assignees: []
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: Is this a bug or an enhancement request?
+      options:
+        - Bug
+        - Enhancement
+    validations:
+      required: true
+  - type: dropdown
+    id: feature_area
+    attributes:
+      label: Feature Area
+      description: Which part of the extension does this relate to?
+      options:
+        - Navigation Shortcuts
+        - Dark Mode
+        - Data Analyzer (SQL Query Autocompletion)
+        - Analytics Query (Data Clean-up)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug or enhancement clearly.
+      placeholder: What happened? What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce (for bugs)
+      description: 'If this is a bug, provide the steps to reproduce the issue.'
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error '...'
+    validations:
+      required: false
+  - type: input
+    id: browser_version
+    attributes:
+      label: Browser Version
+      placeholder: 'e.g., Chrome 124.0.6367.91'
+    validations:
+      required: false
+  - type: input
+    id: extension_version
+    attributes:
+      label: Extension Version
+      placeholder: 'e.g., v1.3.2'
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: 'Add any other context, screenshots, logs, or references here.'
+    validations:
+      required: false
