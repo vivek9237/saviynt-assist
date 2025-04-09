@@ -24,7 +24,7 @@ body:
     attributes:
       label: Summary of Enhancement
       description: Describe your suggestion or improvement idea.
-      placeholder: ""
+      placeholder: "Example: New shortcut link for ...."
     validations:
       required: true
  
@@ -33,7 +33,7 @@ body:
     attributes:
       label: Use Case / Benefit
       description: Why is this enhancement useful? Who will it benefit?
-      placeholder: ""
+      placeholder: "Example: To speed up writing query..."
     validations:
       required: true
  
