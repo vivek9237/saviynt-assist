@@ -13,8 +13,8 @@ body:
       options:
         - Navigation Shortcuts
         - Dark Mode
-        - Data Analyzer (SQL Query Autocompletion)
-        - Analytics Query (Data Clean-up)
+        - Data Analyzer (Query Autocompletion)
+        - Analytics Query (Query Autocompletion)
         - Other
     validations:
       required: true
